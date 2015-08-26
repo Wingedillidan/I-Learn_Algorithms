@@ -11,12 +11,12 @@ i = raw_input('> ')
 for j in xrange(1, i):
     result = ""
 
-    if i % 3 == 0:
+    if j % 3 == 0:
         result += "fizz"
-    if i % 5 == 0:
+    if j % 5 == 0:
         result += "buzz"
 
     if result == "":
-        print i
+        print j
     else:
         print result
