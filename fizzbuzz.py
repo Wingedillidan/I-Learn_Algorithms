@@ -5,7 +5,7 @@ divisible by 5, "fizzbuzz" if it's divisible by both, or the number if it's
 not divisible by either.
 """
 
-i = raw_input('> ')
+i = int(raw_input('> '))
 
 
 for j in xrange(1, i):
