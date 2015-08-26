@@ -9,17 +9,15 @@ class LinkedListNode(object):
 
         return self.nxt
 
-    def _ds(self):
+    def _displaynode(self):
         print self.val
         return self.nxt
 
     def display(self):
-        nxt = self._ds()
+        nxt = self._displaynode()
 
-        while True:
-            if nxt is None:
-                break
-            nxt = nxt._ds()
+        while nxt is not None:
+            nxt = nxt._displaynode()
 
 ll = LinkedListNode(1)
 nxt = ll.add(2)
