@@ -10,9 +10,9 @@ class LinkedListNode(object):
         return self.nxt
 
 ll = LinkedListNode(1)
-next = ll.add(2)
+nxt = ll.add(2)
 
 for i in xrange(3, 6):
-    next = next.add(i)
+    nxt = nxt.add(i)
 
 print ll.nxt.nxt.nxt.nxt.val
