@@ -16,10 +16,7 @@
 	"buffers":
 	[
 		{
-			"contents": "\"\"\"\nReceive a number on stdin. For every number from 1 to the number received\n(inclusive), print \"fizz\" if the number is divisible by 3, \"buzz\" if it's\ndivisible by 5, \"fizzbuzz\" if it's divisible by both, or the number if it's\nnot divisible by either.\n\"\"\"\n\ni = int(raw_input('> '))\n\n\nfor j in xrange(1, i):\n    result = \"\"\n\n    if j % 3 == 0:\n        result += \"fizz\"\n    if j % 5 == 0:\n        result += \"buzz\"\n\n    if result == \"\":\n        print j\n    else:\n        print result\n",
 			"file": "fizzbuzz.py",
-			"file_size": 504,
-			"file_write_time": 130850257410000000,
 			"settings":
 			{
 				"buffer_size": 482,
@@ -27,10 +24,13 @@
 			}
 		},
 		{
+			"contents": "class LinkedListNode(object):\n\n    def __init__(self, val=None, nxt=None):\n        self.val = val\n        self.nxt = nxt\n\n    def add(self, val):\n        self.nxt = LinkedListNode(val)\n\n        return self.nxt\n\n    def _displaynode(self):\n        print self.val\n        return self.nxt\n\n    def display(self):\n        nxt = self._displaynode()\n\n        while nxt is not None:\n            nxt = nxt._displaynode()\n\n    def setnxt(self, nxt):\n        self.nxt = nxt\n        return nxt\n\n    def reverse(self):\n        result = None\n        ondeck = None\n\n        \n        \n        return result\n\n\nll = LinkedListNode(1)\nnxt = ll.add(2)\n\nfor i in xrange(3, 100):\n    nxt = nxt.add(i)\n\nll.display()\nll = ll.reverse()\nll.display()\n",
 			"file": "linkedlist.py",
+			"file_size": 1322,
+			"file_write_time": 130850410377301491,
 			"settings":
 			{
-				"buffer_size": 1261,
+				"buffer_size": 725,
 				"line_ending": "Windows"
 			}
 		}
@@ -42,10 +42,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 241.0,
-		"last_filter": "git add",
+		"height": 129.0,
+		"last_filter": "remove",
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"git add",
 				"Git: Add Current File"
@@ -85,10 +89,6 @@
 			[
 				"",
 				"Anaconda: Goto object definition"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"fold",
@@ -161,11 +161,10 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Collin McLean/Dropbox/Programming/algorithms"
+		"/C/Users/Wingedillidan/Dropbox/Programming/algorithms"
 	],
 	"file_history":
 	[
-		"/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/ui.txt",
 		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/sail.py",
 		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/ui.py",
@@ -177,7 +176,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -191,7 +190,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"space",
 			"nxt",
 			"_ds",
 			"next",
@@ -225,7 +223,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -241,8 +239,8 @@
 						"selection":
 						[
 							[
-								482,
-								482
+								282,
+								282
 							]
 						],
 						"settings":
@@ -255,7 +253,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -264,7 +262,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1261,
+						"buffer_size": 725,
 						"regions":
 						{
 						},
@@ -278,14 +276,13 @@
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 189.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -293,7 +290,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -334,7 +331,7 @@
 	"project": "algorithms.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
