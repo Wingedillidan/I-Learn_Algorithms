@@ -23,39 +23,44 @@ class LinkedListNode(object):
         self.nxt = nxt
         return nxt
 
+    def gonxt(self, nxt):
+        return nxt.nxt
+
     def reverse(self):
-        result = None
-        ondeck = None
+        stopval = None
+        holdval = None
+        currentnode = self
 
-        while self.nxt is not None:
-            nxt = self._displaynode()
+        while True:
+            nxt = currentnode.nxt
 
-            if nxt.nxt is not None:
-                while nxt.nxt.nxt is not None:
-                    nxt = nxt._displaynode()
+            if stopval is None:
+                while nxt.nxt is not None:
+                    nxt = nxt.gonxt(nxt)
             else:
+                while nxt.nxt.val is not stopval:
+                    # print "compared:", nxt.nxt.val, "to stopval:", stopval
+                    nxt = self.gonxt(nxt)
+
+            holdval = currentnode.val
+            currentnode.val = nxt.val
+            stopval = holdval
+            nxt.val = holdval
+
+            if currentnode.nxt is None:
                 break
-
-            if result is None:
-                result = LinkedListNode(nxt.nxt.val)
-                ondeck = result
             else:
-                ondeck = ondeck.setnxt(nxt.nxt)
+                currentnode = currentnode.nxt
 
-            nxt.nxt = None
-
-        ondeck = ondeck.setnxt(self.nxt)
-        ondeck = ondeck.setnxt(LinkedListNode(self.val))
-
-        return result
+            self.display()
 
 
 ll = LinkedListNode(1)
 nxt = ll.add(2)
 
-for i in xrange(3, 100):
+for i in xrange(3, 5):
     nxt = nxt.add(i)
 
-ll.display()
+# ll.display()
 ll = ll.reverse()
 ll.display()
