@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"nxt",
+				"nxt	statement"
+			],
+			[
+				"i",
+				"i	param"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\"\"\"\nReceive a number on stdin. For every number from 1 to the number received\n(inclusive), print \"fizz\" if the number is divisible by 3, \"buzz\" if it's\ndivisible by 5, \"fizzbuzz\" if it's divisible by both, or the number if it's\nnot divisible by either.\n\"\"\"\n\ni = int(raw_input('> '))\n\n\nfor j in xrange(1, i):\n    result = \"\"\n\n    if j % 3 == 0:\n        result += \"fizz\"\n    if j % 5 == 0:\n        result += \"buzz\"\n\n    if result == \"\":\n        print j\n    else:\n        print result\n",
+			"file": "fizzbuzz.py",
+			"file_size": 504,
+			"file_write_time": 130850257410000000,
+			"settings":
+			{
+				"buffer_size": 482,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "linkedlist.py",
+			"settings":
+			{
+				"buffer_size": 1261,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 241.0,
+		"last_filter": "git add",
+		"selected_items":
+		[
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"usage",
+				"Anaconda: Find object usage"
+			],
+			[
+				"",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"fold",
+				"Fold Python : go to import"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"goot",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"goto",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"anaconda",
+				"Anaconda: Find object usage"
+			],
+			[
+				"python",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"log",
+				"Git: Log All"
+			],
+			[
+				"branch",
+				"Git: New Branch"
+			],
+			[
+				"check",
+				"Git: Checkout Tag"
+			],
+			[
+				"git",
+				"Set Syntax: Git Graph"
+			],
+			[
+				"instea",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 549.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms"
+	],
+	"file_history":
+	[
+		"/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/ui.txt",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/sail.py",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/ui.py",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/event.py",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/main.py",
+		"/C/Users/Wingedillidan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Wingedillidan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/new_file.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"space",
+			"nxt",
+			"_ds",
+			"next",
+			"name",
+			"i",
+			"len",
+			"white",
+			"whitespace",
+			"msg_invalid",
+			"\n            ",
+			"            ",
+			"x1",
+			"fuel",
+			"hp",
+			"fuel",
+			"self.hp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "fizzbuzz.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "linkedlist.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								725,
+								725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 189.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "",
+	"project": "algorithms.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ui.p",
+				"ui.py"
+			],
+			[
+				"ui",
+				"ui.txt"
+			],
+			[
+				"sail",
+				"sail.py"
+			],
+			[
+				"event",
+				"event.py"
+			],
+			[
+				"ui.t",
+				"ui.txt"
+			],
+			[
+				"",
+				"ui.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 73.0,
+		"last_filter": "ship",
+		"selected_items":
+		[
+			[
+				"ship",
+				"Ship"
+			],
+			[
+				"change",
+				"change"
+			]
+		],
+		"width": 490.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

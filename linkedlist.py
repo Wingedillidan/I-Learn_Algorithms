@@ -53,7 +53,7 @@ class LinkedListNode(object):
 ll = LinkedListNode(1)
 nxt = ll.add(2)
 
-for i in xrange(3, 6):
+for i in xrange(3, 100):
     nxt = nxt.add(i)
 
 ll.display()
