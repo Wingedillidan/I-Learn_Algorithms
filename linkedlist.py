@@ -28,19 +28,20 @@ class LinkedListNode(object):
         current = None
 
         if nxt is None:
-            print "Level down! (a) val:", self.val
             current = self.reverse(self.nxt)
         elif nxt.nxt is None:
+            self.hold = self.val
             self.val = nxt.val
+            self.nxt = None
 
-            print "Level up! (a) Returning val:", nxt.val
-            return self.nxt
+            return self
         else:
-            print "Level down! (b) val:", nxt.val, "passing:", nxt.nxt.val
             current = self.reverse(nxt.nxt)
 
-        print "Level up! (b) Returning val:", nxt.val
-        return current.add(nxt)
+        if nxt is not None:
+            return current.add(nxt.val)
+        else:
+            return current.add(self.hold)
 
 
 ll = LinkedListNode(1)
@@ -50,5 +51,5 @@ for i in xrange(3, 5):
     nxt = nxt.add(i)
 
 ll.display()
-ll = ll.reverse()
+ll.reverse()
 ll.display()
