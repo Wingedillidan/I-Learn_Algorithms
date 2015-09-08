@@ -22,7 +22,8 @@ class LinkedListNode(object):
 
     def setnxt(self, nxt):
         self.nxt = nxt
-        return nxt
+
+        return self.nxt
 
     def reverse(self, nxt=None):
         current = None
@@ -39,7 +40,7 @@ class LinkedListNode(object):
             current = self.reverse(nxt.nxt)
 
         if nxt is not None:
-            return current.add(nxt.val)
+            return current.setnxt(nxt)
         else:
             return current.add(self.hold)
 
@@ -47,7 +48,7 @@ class LinkedListNode(object):
 ll = LinkedListNode(1)
 nxt = ll.add(2)
 
-for i in xrange(3, 5):
+for i in xrange(3, 101):
     nxt = nxt.add(i)
 
 ll.display()
