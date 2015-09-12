@@ -82,11 +82,11 @@ class Conjecture(object):
 
         self.calc3()
 
+if __name__ == "__main__":
+    print 'enter a number'
+    difficulty = raw_input('> ')
 
-print 'enter a number'
-difficulty = raw_input('> ')
+    mathamajigz = Conjecture(int(difficulty))
+    mathamajigz.conject()
 
-mathamajigz = Conjecture(int(difficulty))
-mathamajigz.conject()
-
-print 'maths:', mathamajigz.maths
+    print 'maths:', mathamajigz.maths
