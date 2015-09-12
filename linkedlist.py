@@ -25,24 +25,26 @@ class LinkedListNode(object):
 
         return self.nxt
 
-    def reverse(self, nxt=None):
-        current = None
 
-        if nxt is None:
-            current = self.reverse(self.nxt)
-        elif nxt.nxt is None:
-            self.hold = self.val
-            self.val = nxt.val
-            self.nxt = None
+def reverse(linkedlist):
+    theguybefore = linkedlist
+    nextinline = linkedlist.nxt
+    savemyspot = None
 
-            return self
+    while True:
+        if nextinline is not None:
+            if nextinline.nxt is None:
+                savemyspot = None
+            else:
+                savemyspot = nextinline.nxt
+            nextinline.nxt = theguybefore
+            theguybefore = nextinline
+
+        if savemyspot is None:
+            linkedlist.nxt = None
+            return nextinline
         else:
-            current = self.reverse(nxt.nxt)
-
-        if nxt is not None:
-            return current.setnxt(nxt)
-        else:
-            return current.add(self.hold)
+            nextinline = savemyspot
 
 
 ll = LinkedListNode(1)
@@ -52,5 +54,5 @@ for i in xrange(3, 101):
     nxt = nxt.add(i)
 
 ll.display()
-ll.reverse()
+ll = reverse(ll)
 ll.display()
