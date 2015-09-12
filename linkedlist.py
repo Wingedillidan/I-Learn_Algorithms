@@ -28,20 +28,20 @@ class LinkedListNode(object):
 
 def reverse(linkedlist):
     theguybefore = linkedlist
+    print "The object before me is:", linkedlist.val
     nextinline = linkedlist.nxt
+    print "The object whose next is:", nextinline.val
     savemyspot = None
 
     while True:
         if nextinline is not None:
-            if nextinline.nxt is None:
-                savemyspot = None
-            else:
-                savemyspot = nextinline.nxt
+            print "Currently attending to:", nextinline.val
+            savemyspot = nextinline.nxt
+            print "I am currently saving the line starting:", savemyspot.val
             nextinline.nxt = theguybefore
             theguybefore = nextinline
 
         if savemyspot is None:
-            linkedlist.nxt = None
             return nextinline
         else:
             nextinline = savemyspot
