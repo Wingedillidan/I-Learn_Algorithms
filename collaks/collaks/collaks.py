@@ -1,6 +1,6 @@
 class Conjecture(object):
 
-    def __init__(self, number, thresh=10):
+    def __init__(self, number, thresh=1):
         self.number = abs(number)
         self.maths = 0
         self.thresh = thresh
@@ -33,11 +33,10 @@ class Conjecture(object):
 
             while whereimat is not 1:
                 localmaths += 1
-
-                if buildalistman:
-                    dictman[whereimat] = localmaths
-
                 whereimat = self.calc(whereimat)
+
+            if buildalistman:
+                dictman[i] = localmaths
 
         if buildalistman:
             return dictman
@@ -58,7 +57,7 @@ class Conjecture(object):
                 localmaths += 1
 
                 if self.dictman.get(whereimat, None):
-                    localmaths += self.dictman[whereimat]
+                    localmaths += self.dictman[whereimat] - 1
                     break
                 else:
                     whereimat = self.calc(whereimat)
@@ -66,7 +65,7 @@ class Conjecture(object):
             self.maths += localmaths + 1
 
     def conject(self):
-        # intoruleall maintains the int position and how many maths it does
+        # inttoruleall maintains the int position and how many maths it does
         inttoruleall = (0, 0)
         holdmetight = 0
         start = self.number - self.thresh
@@ -78,7 +77,7 @@ class Conjecture(object):
             if holdmetight > inttoruleall[1]:
                 inttoruleall = (i, holdmetight)
 
-        self.dictman = self.calc2(inttoruleall[0], buildalistman=True)
+        self.dictman = self.calc2(1, inttoruleall[0], buildalistman=True)
 
         self.calc3()
 
