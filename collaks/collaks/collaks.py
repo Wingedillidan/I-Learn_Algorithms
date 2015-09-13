@@ -1,91 +1,44 @@
 class Conjecture(object):
 
-    def __init__(self, number, thresh=1):
-        self.number = abs(number)
+    def __init__(self, number):
+        self.number = number
+        self.lib = {}
         self.maths = 0
-        self.thresh = thresh
-        self.dictman = {}
 
-    def calc(self, num):
-        if num % 2 == 0:
-            return num / 2
+    def calc(self, number):
+        if number % 2 == 0:
+            return number / 2
         else:
-            return num * 3 + 1
+            return number * 3 + 1
 
-    def calc2(self, start, end=0, buildalistman=False):
-        """Electric Boogaloo"""
+    def inner(self, number):
+        holdme = number
+        maths = 1
 
-        # initial declarations for use in loops
-        whereimat = 0
-        endforsuperrealsies = 0
-        dictman = {}
-        localmaths = 0
+        while holdme is not 1:
+            if self.lib.get(holdme, None):
+                maths += self.lib[holdme] - 1
+                break
 
-        # end specification optional
-        if not end:
-            endforsuperrealsies = start
-        else:
-            endforsuperrealsies = end
+            maths += 1
+            holdme = self.calc(holdme)
 
-        for i in xrange(start, endforsuperrealsies+1):
-            localmaths = 0
-            whereimat = i
+        return maths
 
-            while whereimat is not 1:
-                localmaths += 1
-                whereimat = self.calc(whereimat)
-
-            if buildalistman:
-                dictman[i] = localmaths
-
-        if buildalistman:
-            return dictman
-        else:
-            return localmaths + 1
-
-    def calc3(self):
-        """Not as good as the original"""
-
-        whereimat = 0
-        localmaths = 0
+    def proc(self):
+        innermaths = 0
 
         for i in xrange(1, self.number+1):
-            localmaths = 0
-            whereimat = i
+            innermaths = self.inner(i)
 
-            while whereimat is not 1:
-                localmaths += 1
+            if not self.lib.get(i, None):
+                self.lib[i] = innermaths
 
-                if self.dictman.get(whereimat, None):
-                    localmaths += self.dictman[whereimat] - 1
-                    break
-                else:
-                    whereimat = self.calc(whereimat)
-
-            self.maths += localmaths + 1
-
-    def conject(self):
-        # inttoruleall maintains the int position and how many maths it does
-        inttoruleall = (0, 0)
-        holdmetight = 0
-        start = self.number - self.thresh
-        end = self.number + self.thresh
-
-        for i in xrange(start, end+1):
-            holdmetight = self.calc2(i)
-
-            if holdmetight > inttoruleall[1]:
-                inttoruleall = (i, holdmetight)
-
-        self.dictman = self.calc2(1, inttoruleall[0], buildalistman=True)
-
-        self.calc3()
+            self.maths += innermaths
 
 if __name__ == "__main__":
-    print 'enter a number'
-    difficulty = raw_input('> ')
-
-    mathamajigz = Conjecture(int(difficulty))
-    mathamajigz.conject()
-
-    print 'maths:', mathamajigz.maths
+    number = raw_input('input a number >')
+    collaks = Conjecture(int(number))
+    collaks.proc()
+    # print collaks.lib
+    print collaks.maths
