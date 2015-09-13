@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"end",
+				"end"
+			],
+			[
+				"coll",
+				"collaks"
+			],
+			[
+				"colla",
+				"collaks_naive	import"
+			],
+			[
 				"None",
 				"None	instance"
 			],
@@ -20,27 +32,35 @@
 	"buffers":
 	[
 		{
-			"file": "fizzbuzz.py",
+			"file": "collaks/collatz/collatz.py",
 			"settings":
 			{
-				"buffer_size": 482,
+				"buffer_size": 1760,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "linkedlist.py",
+			"file": "collaks/collatz/collatz_naive.py",
 			"settings":
 			{
-				"buffer_size": 1075,
+				"buffer_size": 705,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "collaks/setup.py",
 			"settings":
 			{
-				"buffer_size": 141,
-				"line_ending": "Unix"
+				"buffer_size": 440,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collaks/tests/test_collatz.py",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -51,24 +71,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 58.0,
-		"last_filter": "git status",
+		"height": 219.0,
+		"last_filter": "git comm",
 		"selected_items":
 		[
 			[
-				"git status",
-				"Git: Status"
+				"git comm",
+				"Git: Commit"
 			],
 			[
 				"git add",
 				"Git: Add Current File"
 			],
 			[
-				"git commit",
-				"Git: Commit"
+				"git status",
+				"Git: Status"
 			],
 			[
-				"git comm",
+				"git commit",
 				"Git: Commit"
 			],
 			[
@@ -182,6 +202,14 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/collaks/tests/test_collaks_naive.py",
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/collaks/collaks/__init__.py",
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/collaks/__init__.py",
+		"/C/Users/Collin McLean/Dropbox/Programming/lpthw/ex48/tests/ex48_tests.py",
+		"/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/fizzbuzz.py",
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/linkedlist.py",
+		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/collaks.py",
 		"/C/Users/Collin McLean/Dropbox/Programming/algorithms/algorithms (Collin's conflicted copy 2015-09-09).sublime-workspace",
 		"/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Wingedillidan/Dropbox/Programming/lpthw/game/ui.txt",
@@ -209,6 +237,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"collaks",
+			"Collak",
+			"...\"",
+			"listman",
+			"thresh",
+			"endforreals",
+			"yaaydisplaay",
+			"yaaydisplaay = [i]",
+			"whereivebeen",
+			"Conjections",
+			"conjections",
 			"stow",
 			"holdme",
 			"display",
@@ -248,54 +287,55 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "fizzbuzz.py",
+					"file": "collaks/collatz/collatz.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 482,
+						"buffer_size": 1760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								1596,
+								1596
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "linkedlist.py",
+					"file": "collaks/collatz/collatz_naive.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1075,
+						"buffer_size": 705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								943,
-								943
+								519,
+								519
 							]
 						],
 						"settings":
@@ -305,32 +345,69 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 2,
-					"file": "/C/Users/Collin McLean/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"file": "collaks/setup.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 141,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								245,
+								245
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"history_list_is_closing": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "collaks/tests/test_collatz.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -359,11 +436,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -394,6 +478,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"collat",
+				"collaks\\collaks\\collatz.py"
+			],
+			[
+				"collaks/",
+				"collaks\\setup.py"
+			],
+			[
+				"colla",
+				"collaks\\collaks\\collaks.py"
+			],
 			[
 				"ui.p",
 				"ui.py"

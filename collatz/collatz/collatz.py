@@ -1,5 +1,5 @@
 class Conjecture(object):
-    """Based on Collak's Conjecture, an optimization challenge!"""
+    """Based on Collatz's Conjecture, an optimization challenge!"""
 
     def __init__(self, number):
         self.number = number
@@ -54,7 +54,7 @@ class Conjecture(object):
 
 if __name__ == "__main__":
     number = raw_input('input a number >')
-    collaks = Conjecture(int(number))
-    collaks.proc()
-    # print collaks.lib
-    print collaks.maths
+    collatz = Conjecture(int(number))
+    collatz.proc()
+    # print collatz.lib
+    print collatz.maths

@@ -6,13 +6,13 @@ except ImportError:
 config = {
     'description': 'fastest way to conject',
     'author': 'Collin McLean',
-    'url': 'http://github.com/wingedillidan/algorithms/collaks',
+    'url': 'http://github.com/wingedillidan/algorithms/collatz',
     'author_email': 'wingedillidan@gmail.com',
     'version': '1.0',
     'install_requires': ['nose'],
-    'packages': ['collaks'],
+    'packages': ['collatz'],
     'scripts': [],
-    'name': 'collaks'
+    'name': 'collatz'
 }
 
 setup(**config)
