@@ -8,7 +8,7 @@ config = {
     'author': 'Collin McLean',
     'url': 'http://github.com/wingedillidan/algorithms/collaks',
     'author_email': 'wingedillidan@gmail.com',
-    'version': '0.1',
+    'version': '1.0',
     'install_requires': ['nose'],
     'packages': ['collaks'],
     'scripts': [],
