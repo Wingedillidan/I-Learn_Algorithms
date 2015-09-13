@@ -8,7 +8,7 @@ config = {
     'author': 'Collin McLean',
     'url': 'http://github.com/wingedillidan/algorithms/collatz',
     'author_email': 'wingedillidan@gmail.com',
-    'version': '1.0',
+    'version': '1.5',
     'install_requires': ['nose'],
     'packages': ['collatz'],
     'scripts': [],
