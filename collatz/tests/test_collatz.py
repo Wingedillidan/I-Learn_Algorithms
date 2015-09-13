@@ -1,12 +1,12 @@
 from nose.tools import *
-from collaks import collaks
-from collaks import collaks_naive
+from collatz import collatz
+from collatz import collatz_naive
 
 
 def test_conject():
-    new = collaks.Conjecture(10000)
+    new = collatz.Conjecture(10000)
     new.proc()
-    naive = collaks_naive.Conjecture(10000)
+    naive = collatz_naive.Conjecture(10000)
     naive.conject()
 
     assert_equal(new.maths, naive.maths)

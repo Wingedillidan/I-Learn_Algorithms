@@ -26,7 +26,7 @@ class Conjecture(object):
         while holdme is not 1:
             if self.lib.get(holdme, None):
                 maths += self.lib[holdme] - 1
-                    break
+                break
 
             maths += 1
             holdme = self.calc(holdme)
