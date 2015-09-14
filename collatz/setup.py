@@ -4,7 +4,7 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'fastest way to conject',
+    'description': 'finding a faster way to conject',
     'author': 'Collin McLean',
     'url': 'http://github.com/wingedillidan/algorithms/collatz',
     'author_email': 'wingedillidan@gmail.com',
