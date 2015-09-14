@@ -4,6 +4,12 @@ class Conjecture(object):
         self.number = abs(number)
         self.maths = 0
 
+    def calc(self, num):
+        if num % 2 == 0:
+            return num / 2
+        else:
+            return num * 3 + 1
+
     def conject(self):
         whereimat = 0
 
@@ -15,12 +21,6 @@ class Conjecture(object):
                 whereimat = self.calc(whereimat)
 
             self.maths += 1
-
-    def calc(self, num):
-        if num % 2 == 0:
-            return num / 2
-        else:
-            return num * 3 + 1
 
 
 if __name__ == "__main__":
