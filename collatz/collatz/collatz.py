@@ -1,12 +1,11 @@
 def conjecture(number):
-    current = number
     ops = 1
 
-    while current is not 1:
-        if current % 2 == 0:
-            current = current / 2
+    while number is not 1:
+        if number % 2 == 0:
+            number = number / 2
         else:
-            current = current * 3 + 1
+            number = number * 3 + 1
 
         ops += 1
 
