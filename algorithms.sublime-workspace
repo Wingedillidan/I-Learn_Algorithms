@@ -47,7 +47,15 @@
 			"file": "collatz/collatz/collatz.py",
 			"settings":
 			{
-				"buffer_size": 1965,
+				"buffer_size": 569,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collatz/collatz/collatz_naive.py",
+			"settings":
+			{
+				"buffer_size": 705,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,10 +83,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 196.0,
-		"last_filter": "git add",
+		"height": 219.0,
+		"last_filter": "git comm",
 		"selected_items":
 		[
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
 			[
 				"git add",
 				"Git: Add Current File"
@@ -90,14 +106,6 @@
 			[
 				"goto",
 				"Anaconda: Goto object definition"
-			],
-			[
-				"git comm",
-				"Git: Commit"
-			],
-			[
-				"git status",
-				"Git: Status"
 			],
 			[
 				"git commit",
@@ -246,6 +254,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"):\n",
+			"current",
 			"pos",
 			"collaks",
 			"Collak",
@@ -306,15 +316,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1965,
+						"buffer_size": 569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1476,
-								1476
+								474,
+								474
 							]
 						],
 						"settings":
@@ -325,7 +335,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "collatz/collatz/collatz_naive.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -338,7 +378,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "collatz/setup.py",
 					"semi_transient": false,
 					"settings":
@@ -356,6 +396,7 @@
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -364,11 +405,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "collatz/tests/test_collatz.py",
 					"semi_transient": false,
 					"settings":
@@ -386,13 +427,14 @@
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -458,12 +500,12 @@
 		"selected_items":
 		[
 			[
-				"te",
-				"collatz\\tests\\test_collatz.py"
+				"coll",
+				"collatz\\collatz\\collatz_naive.py"
 			],
 			[
-				"coll",
-				"collatz\\setup.py"
+				"te",
+				"collatz\\tests\\test_collatz.py"
 			],
 			[
 				"collat",
@@ -530,7 +572,7 @@
 		],
 		"width": 490.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
